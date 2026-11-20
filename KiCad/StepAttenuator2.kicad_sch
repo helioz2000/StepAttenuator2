@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "05e222cb-5e18-4941-ba92-05c28d8508e0")
 	(paper "A4")
+	(title_block
+		(title "Step Attenuator 2 - MCU")
+		(rev "1.0")
+		(company "Omniphase Pty Ltd")
+		(comment 1 "www.omniphase.com.au")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
@@ -3292,16 +3298,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "To RF\nBoard"
-		(exclude_from_sim no)
-		(at 227.584 70.358 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3f85d68e-56ed-4624-abfd-3baca9151008")
-	)
 	(junction
 		(at 121.92 134.62)
 		(diameter 0)
@@ -3373,16 +3369,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cab0be75-6f04-4918-8296-f1ff8debe0b2")
-	)
-	(wire
-		(pts
-			(xy 233.68 93.98) (xy 233.68 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00025657-12da-4b5d-8052-f688d52fd208")
 	)
 	(wire
 		(pts
@@ -3773,16 +3759,6 @@
 			(type default)
 		)
 		(uuid "784c8f67-e06d-4a32-93a5-6d40c1547858")
-	)
-	(wire
-		(pts
-			(xy 220.98 93.98) (xy 220.98 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "787a7192-b719-4cf7-8fa6-8bb380c34f37")
 	)
 	(wire
 		(pts
@@ -5178,160 +5154,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 220.98 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2c92eed0-25c1-476f-a325-b1363a302a8d")
-		(property "Reference" "#PWR02"
-			(at 220.98 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 220.98 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "598e41a5-0a5b-4c1d-8c7f-c4f141cd57fc")
-		)
-		(instances
-			(project "StepAttenuator2"
-				(path "/05e222cb-5e18-4941-ba92-05c28d8508e0"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 233.68 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3118d0f2-c6f0-4c89-8f06-c38c7eefb1c1")
-		(property "Reference" "#PWR020"
-			(at 233.68 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 233.68 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 233.68 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a5ea6fc8-cec8-49f7-bfb6-1f619ab04867")
-		)
-		(instances
-			(project "StepAttenuator2"
-				(path "/05e222cb-5e18-4941-ba92-05c28d8508e0"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 215.9 124.46 0)
 		(unit 1)
@@ -5497,84 +5319,6 @@
 			(project "StepAttenuator2"
 				(path "/05e222cb-5e18-4941-ba92-05c28d8508e0"
 					(reference "U7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 220.98 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44dcbe62-623c-448a-be13-0e9b1b797b84")
-		(property "Reference" "#PWR021"
-			(at 220.98 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 220.98 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 220.98 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "33513937-f7a7-460b-9333-aae485c4b0ae")
-		)
-		(instances
-			(project "StepAttenuator2"
-				(path "/05e222cb-5e18-4941-ba92-05c28d8508e0"
-					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -6419,9 +6163,9 @@
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(on_board no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "a6d10c6a-6b30-477a-a271-783223967a9a")
 		(property "Reference" "J2"
 			(at 227.076 73.406 0)
@@ -6846,84 +6590,6 @@
 			(project "StepAttenuator2"
 				(path "/05e222cb-5e18-4941-ba92-05c28d8508e0"
 					(reference "FB1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 233.68 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d080e37f-ba0a-4604-9022-902be3824e71")
-		(property "Reference" "#PWR022"
-			(at 233.68 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 233.68 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 233.68 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e4ffc37b-6984-45c1-8340-305a8de46182")
-		)
-		(instances
-			(project "StepAttenuator2"
-				(path "/05e222cb-5e18-4941-ba92-05c28d8508e0"
-					(reference "#PWR022")
 					(unit 1)
 				)
 			)
