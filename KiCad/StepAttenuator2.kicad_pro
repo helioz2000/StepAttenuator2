@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 1.27
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,17 +60,64 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.2,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "copper_edge_clearance|100800000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|d11bf255-7625-4e16-b919-5c859d0e8e31",
+          ""
+        ],
+        [
+          "copper_edge_clearance|100800000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|d95a73b1-7b5c-409d-86f1-7978ee139209",
+          ""
+        ],
+        [
+          "copper_edge_clearance|105050000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|e95b1ef5-f12e-4613-91a8-45ce696e92f9",
+          ""
+        ],
+        [
+          "copper_edge_clearance|109300000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|101e7446-b071-4919-81f0-cfee17a9f12d",
+          ""
+        ],
+        [
+          "copper_edge_clearance|109300000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|c3ffc3d3-79f9-4b19-8d81-91abc8630cfe",
+          ""
+        ],
+        [
+          "copper_edge_clearance|190200000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|6a986f5d-4ec8-4507-8c4d-6a371541cb44",
+          ""
+        ],
+        [
+          "copper_edge_clearance|190200000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|f4bed013-431c-411a-ae42-f630f531c532",
+          ""
+        ],
+        [
+          "copper_edge_clearance|194450000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|644f9e2d-ce3a-44fb-8ca7-dcb3d4842851",
+          ""
+        ],
+        [
+          "copper_edge_clearance|198700000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|6878b2a0-9be9-4a37-b917-4e45ca879ad2",
+          ""
+        ],
+        [
+          "copper_edge_clearance|198700000|55760000|188a48e2-f443-4696-bdf6-5b75b7d2bae1|cbded4ba-28bc-40c8-ada9-2324c524b4f1",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -203,7 +250,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -230,7 +279,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -466,7 +520,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -495,7 +549,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -511,14 +565,147 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "3V3_PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "5V_PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "RF_50OHM",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3058,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_assignments": {
+      "Net-(J3-In)": [
+        "RF_50OHM"
+      ],
+      "Net-(J4-In)": [
+        "RF_50OHM"
+      ],
+      "Net-(K1-Pad2)": [
+        "RF_50OHM"
+      ],
+      "Net-(K1-Pad3)": [
+        "RF_50OHM"
+      ],
+      "Net-(K2-Pad2)": [
+        "RF_50OHM"
+      ],
+      "Net-(K2-Pad3)": [
+        "RF_50OHM"
+      ],
+      "Net-(K3-Pad2)": [
+        "RF_50OHM"
+      ],
+      "Net-(K3-Pad3)": [
+        "RF_50OHM"
+      ],
+      "Net-(K4-Pad2)": [
+        "RF_50OHM"
+      ],
+      "Net-(K4-Pad3)": [
+        "RF_50OHM"
+      ],
+      "Net-(K5-Pad2)": [
+        "RF_50OHM"
+      ],
+      "Net-(U1-IN)": [
+        "RF_50OHM"
+      ],
+      "Net-(U1-OUT)": [
+        "RF_50OHM"
+      ],
+      "Net-(U2-IN)": [
+        "RF_50OHM"
+      ],
+      "Net-(U2-OUT)": [
+        "RF_50OHM"
+      ],
+      "Net-(U3-IN)": [
+        "RF_50OHM"
+      ],
+      "Net-(U3-OUT)": [
+        "RF_50OHM"
+      ],
+      "Net-(U4-IN)": [
+        "RF_50OHM"
+      ],
+      "Net-(U4-OUT)": [
+        "RF_50OHM"
+      ],
+      "Net-(U5-IN)": [
+        "RF_50OHM"
+      ],
+      "Net-(U5-OUT)": [
+        "RF_50OHM"
+      ],
+      "Net-(U6-EN)": [
+        "5V_PWR"
+      ],
+      "Net-(U6-OUT)": [
+        "3V3_PWR"
+      ]
+    },
+    "netclass_patterns": [
+      {
+        "netclass": "5V_PWR",
+        "pattern": "*5V*"
+      },
+      {
+        "netclass": "3V3_PWR",
+        "pattern": "*3.3V"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -666,7 +853,7 @@
         "uuid": "724245f6-5778-47a8-b117-dae0f806d2fd"
       }
     ],
-    "used_designators": "K1-5,U1-14,#PWR1-29,#PWR33-36,#PWR38-40,FB1-2,C1-19,R2,R6-12,J1-6",
+    "used_designators": "K1-6,U1-14,#PWR1-36,#PWR38-43,FB1-2,C1-19,R2,R6-12,J1-7",
     "variants": []
   },
   "sheets": [
